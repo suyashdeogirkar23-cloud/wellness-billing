@@ -1,0 +1,6 @@
+{
+  "name": "Wellness Medical Store Billing System",
+  "description": "Comprehensive pharmacy billing, inventory control, and invoice management system for Wellness Medical Store with automated GST calculations and billing analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

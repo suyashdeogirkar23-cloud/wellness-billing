@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Professional Print Stylesheet */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Hide navigation, header, sidebar, buttons during print */
+  aside,
+  header,
+  nav,
+  button,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Ensure invoice container fills printable sheet cleanly */
+  .print\:block {
+    display: block !important;
+  }
+
+  /* Remove modal backdrop overlays in print */
+  .fixed {
+    position: static !important;
+    background: transparent !important;
+  }
+}
